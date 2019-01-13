@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>timer</title>
+        <link rel="shortcut icon" href="image/myimg/favicon-1.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="stopwatch/style.css">
+        <style>
+
+         .ex1 {
+           width: 100px;
+           height: 100px;
+           border-style: solid;
+           border-width: 20px;
+           border-color: red blue green pink;
+         }
+
+         .ex2 {
+           width: 0;
+           height: 0;
+           border: 20px solid;
+           border-color: red blue green pink;
+         }
+
+         .ex3 {
+           width: 0;
+           height: 0;
+           border: 40px solid;
+           border-color: red transparent transparent transparent;
+         }
+
+        </style>
+    </head>
+    <body id="count">
+
+     <div id="main" class="clearfix">
+        <div id="timer">03:00</div>
+        <div id="btn">
+            <button id="start">スタート</button>
+            <button id="stop">ストップ</button>
+            <button id="reset">リセット</button>
+        </div>
+      </div>
+　　　<div class="sub">
+      <h3>ついでにcssで三角形作成</h3>
+      <div class="ex1"></div>
+      <h3>次にwidthとheightを0pxにする</h3>
+      <div class="ex2"></div>
+        <h3>3辺を透明にすると出来上がり！</h3>
+        <div class="ex3"></div>
+    </div>
+        <footer>
+      <p><a href="sample.html" onClick="history.back()">Sampleページへ</a></p>
+
+    </footer>
+
+     <script>
+     (function() {
+                  'use strict';
+
+
+           var timer = document.getElementById('timer');
+           var start = document.getElementById('start');
+            var stop = document.getElementById('stop');
+             var reset = document.getElementById('reset');
+             var run_time = false;
+
+
+             var startTime;
+             var timeToCountDown = 0;　　//全体の時間3秒
+             var timeleft;
+             var timerid;  //cleartimeoutの引数
+
+            function updateTimer(t) {   //ミリ秒を渡す関数をメソッドｓでつくる
+                 var d = new Date(t);  // ローカルタイム取得
+                 var s = d.getSeconds();    //秒
+                 var ms = d.getMilliseconds();
+                 s = ('0' + s).slice(-2); //0文字列を足す→下に桁だけ取り出す
+                  ms = ('0' + ms).slice(-2);
+                timer.textContent = s + ":" + ms;
+            }
+
+             function countDown() {
+                  timerid = setTimeout(function() {
+                    // var elapsedtime = Date.now() - starttime; // 経過時間の宣言
+                     timeleft = timeToCountDown - (Date.now() - startTime); //残り時間を変数にｋ代入
+                        if (timeleft < 0) {
+                          run_time = false;
+                           clearTimeout(timerid);
+                           timeleft = 0;
+                           timeToCountDown = 0;
+                           //updateTimer(timeleft);
+                           timer.textContent="TimeOUT!";
+                         return;
+                       }
+                    updateTimer(timeleft);
+                   countDown();
+                 }, 10); //10miri秒後
+               }
+              start.addEventListener('click', function() { //スタートボタンを押したときの処理
+                    run_time = true;
+                     startTime = Date.now(); //starttimeにo時刻を記憶
+                     //if (timeToCountDown)
+
+                     timeToCountDown = 3 * 1000;
+                     updateTimer(timeToCountDown);
+                   countDown();
+              });
+             stop.addEventListener('click', function() { //ボタンを押したときの
+                run_time = false;
+                timeToCountDown = timeleft;
+                clearTimeout(timerid);
+              });
+             reset.addEventListener('click', function() {
+                 timeToCountDown = 3 * 1000;
+                  updateTimer(timeToCountDown);
+
+              });
+     })();
+     </script>
+   </body>
+</html>

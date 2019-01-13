@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>scrollTry</title>
+  <link rel="shortcut icon" href="image/myimg/favicon-1.ico" type="image/vnd.microsoft.icon">
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  </head>
+  <body id="scroll">
+    <h1 id="#">スクロール実験</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <h1>HELLO</h1>
+    <p>スクロール量が60を超えたら「トップへ戻る」が表示。<br/>
+    60未満の場合はfadeOutする。</p>
+   <p><a href="sample.html">前のページへ戻る</a></p>
+    <div id="topbtn" style="position:fixed;right:5px;bottom:5px"><a href="#">↑</a></div>
+    <div id="pos" style="position:fixed;left:5px;bottom:5px"></div>
+    <script>
+    $(function() {
+      //初期topbtnを消す
+      $('#topbtn').hide();
+
+      //スクロールが十分にされたらtopbtnを表示、戻ったら非表示
+      $(window).scroll(function() {
+        $('#pos').text($(this).scrollTop());
+        if ($(this).scrollTop() > 60) {
+          $('#topbtn').fadeIn();
+        } else {
+          $('#topbtn').fadeOut();
+        }
+      });
+
+  });
+
+
+    </script>
+    </body>
+</html>

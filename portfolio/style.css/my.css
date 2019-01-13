@@ -1,0 +1,177 @@
+body, header, content, div, section, #logo, #nav {
+  margin: 0;
+  padding: 0;
+}
+
+/*全体*/
+
+#zikosyoukai, #form {
+ background-image: url(../image/myimg/border-1.jpg);
+ padding: 0;
+}
+
+#kihon {
+  margin: 0;
+  padding: 0;
+  background-image: url(../image/myimg/alf-1.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#kihon .main-body {
+  width: 1200px;
+  margin: 0 200px;
+  padding: 0;
+  background-color: #fff;
+}
+
+.content {
+  width: 1100px;
+  margin: 0 200px;
+  position: absolute;
+  top: 0px;
+  background-color: #fff;
+  border: 3px dotted #00ffff;
+}
+
+/*header*/
+
+
+header h1 {
+  float: left;
+  font-size: 80px;
+}
+
+
+#kihon header h1 {
+
+  font-size: 60px;
+  margin: 0;
+  padding: 5px;
+}
+
+
+header #nav {
+  float: left;
+  height: 50px;
+}
+
+header li {
+  float: left;
+  color: navi;
+  list-style: none;
+  width: 150px;
+  height: 35px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  margin-left: 5px;
+  background-color: #00ffff;
+}
+
+
+
+#kihon header ul {
+  float: left;
+  height: 30px;
+  margin: 10px;
+  padding: 0;
+}
+
+#kihon header li {
+  float: left;
+  color: navi;
+  list-style: none;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 5px;
+  background-color: #00ffff;
+}
+
+header img {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ff6600;
+  cursor: pointer;
+}
+
+
+
+
+/*main*/
+.main {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#kihon .main {
+  clear: both;
+  margin: 20px 40px;
+  width: 750px;
+}
+
+section {
+
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+table {
+  text-align: left;
+  width: 900px;
+  margin: 15px 20px;
+}
+
+th {
+  width: 150px;
+  height: 40px;
+}
+
+aside img {
+  margin: 10px 25%;
+}
+
+#form .form form {
+  width: 700px;
+  margin; 40px 25%;
+  padding: 20px 50px;
+  border: 5px dotted #00ffff;
+  font-size: 18px;
+}
+
+form #name_box {
+  width: 180px;
+  height: 25px;
+}
+
+form #age {
+  width: 100px;
+  height: 25px;
+}
+
+form #comment {
+  width: 400px;
+  margin:15px auto 15px 10px;
+  border-radius: 10px;
+}
+
+/*footer*/
+ footer {
+   text-align: center;
+   color: #ccc;
+ }
+
+ #form footer {
+   background-color: #ccc;
+   color: black;
+ }

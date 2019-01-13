@@ -1,0 +1,235 @@
+/*リセットcss*/
+body, a, p, ul, li, h1, h2, header, footer{
+  margin: 0;
+  padding: 0;
+  /* font-family: "Comic Sans MS"; */
+}
+
+
+/*back image*/
+
+#sample {
+  background-color: #00ff00;
+}
+
+
+#index {
+  background-image: url(../image/myimg/pre_main.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#index a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*main-body*/
+
+.main-body {
+  margin: 0 200px;
+  background-color: #ccffcc;
+  width: 1200px;
+}
+
+#sample li {
+  list-style:  none;
+  color: #000080;
+  text-decoration: dotted;
+  cursor: pointer;
+}
+
+#sample a :hover {
+  background-color: #ffa500;
+}
+
+#sample .content {
+  width: 1000px;
+  margin: 10px 50px;
+}
+
+.content .web-try, .content .js-try{
+  float: left;
+  width: 480px;
+  margin-left: 15px;
+}
+
+.content h3, .content li{
+  font-weight: bold;
+}
+
+.web-try li, .js-try li{
+  clear: both;
+}
+
+/*header*/
+
+#index header {
+  float: left:
+  width: 100%;
+}
+
+#index header h1 {
+  margin: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
+/*  position: absolute;
+  top: auto;*/
+}
+
+#index #nav {
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+  /*position: absolute;
+  top: 100px;
+  left: auto;*/
+}
+
+#index #nav li {
+  float: left;
+  color: navi;
+  width: 150px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  list-style: none;
+}
+
+#index header .clearfix::after {
+  content: "";
+  clear: both;
+}
+
+
+#sample .logo {
+  float: left;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+#sample #nav ul {
+  float:left;
+  height: 40px;
+   margin: 5px:
+
+}
+
+#sample #nav li {
+  float: left;
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+
+.form {
+  float: right;
+  margin: 50px 15px 20px auto;
+}
+
+.form #text-box {
+  width: 150px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.form #s-btn {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+/*main*/
+#index #main {
+  float: left;
+  width: 100%;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+#index #main h1, h2{
+  font-size: 90px;
+  color: #fff;
+  /* font-family: "Comic Sans MS"; */
+}
+
+h2 {
+  font-size: 70px;
+}
+
+#index p {
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  background-color: #00ffff;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/*slider*/
+ul.navi {
+  width: 220px;
+  margin: 0px;
+}
+
+ul.navi,  ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.category {
+  margin-top: 5px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #b9dde8;
+}
+
+ul.menu a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  color: #164158;
+}
+
+.slideFrame {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.slideCell {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+/*slider*/
+
+.comment {
+  float: left;
+  margin: 50px 25%;
+}
+
+/*footer*/
+#sample footer {
+  clear:both;
+  width: 1200px;
+  color: #ccc;
+  background-color: #a9a9a9;
+  text-align: center;
+}

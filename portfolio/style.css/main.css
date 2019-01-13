@@ -1,0 +1,416 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+ }
+
+ /* リセットcss */
+
+ p, h1, h2, h3, h4, h5, h6 {
+   margin-top: 0;
+ }
+
+/* header */
+
+ header {
+
+   height: 100px;
+   margin: 0 auto;
+ }
+
+ .logo {
+   float: left;
+   margin: 0;
+ }
+
+.gloval-nav {
+  floet: right;
+}
+
+.gloval-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.gloval-nav li a {
+  color: #fff;
+}
+
+.gloval-nav li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#info img {
+   width: 500px;
+   vertical-align: bottom;
+ }
+
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+
+a {
+  color: #3583aa;
+}
+
+a:visited { /*訪問済みのりんく*/
+  color: #788d98;
+}
+
+a:hover { /*ポインタが乗ったとき*/
+  text-decoration: underline;
+}
+
+#contact {
+  background-image: url(../image/bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+/*　contact地図テーブルエレメント　*/
+
+#contact .access table {
+  float: left;
+}
+
+#contact iframe {
+  width: 460px;
+  float: right;
+}
+
+#contact .access th, #contact .access td {
+  text-align: left;
+  vertical-align: top;
+  line-height: 2.5;
+}
+
+#contact .access td {
+  padding-left: 10px;
+}
+/*contact form*/
+#contact .form {
+  background-color: #eaeaea;
+  padding: 30px 50px;
+}
+
+#contact .form dl dd {
+  padding: 10px 0;
+}
+
+#contact .form .name {
+  width: 240px;
+  height: 30px;
+}
+
+#contact .form .email {
+  width: 300px;
+  height: 30px;
+}
+
+#contact .form .tel {
+  width: 240px;
+  height: 30px;
+}
+
+#contact .form .type {
+  width: 180px;
+  height: 30px;
+}
+
+#contact .form .message {
+  width: 660px;
+  height: 150px;
+}
+
+#contact .form button {
+  background-color: #009cd3;
+  font-size: 20px;
+  color: #fff;
+  /*font-familiy: 'Bitter',serif;*/
+  width: 150px;
+  display: block;  /* a要素、img、spanはdisplayを指定しないと高さ幅が調整できない*/
+  text-align: center;
+  line-height: 50px;
+  /*margin-top: 20px;*/
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+  margin-left: 50px;
+}
+
+#contact .form button:hover{
+  /*ボタンにカーソルを乗せたときのみ*/
+  text-decoration: none;
+  background-color: #fff;
+  color: #009cd3;
+  cursor: pointer;
+}
+
+#contact .form .required:after {
+  content: "*";
+  color: #ff0000;
+}
+
+#contact .content {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*portfolio*/
+
+#portfolio {
+  background-image: url(../image/bg-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#portfolio .content {
+  margin: auto 20%;
+}
+
+#wrap {
+  background-color: #fff;
+  margin-top: 220px;
+  /*margin-left: 20%;
+  margin-right: 20%;*/
+  padding: 30px;
+  clear: both;
+}
+
+#portfolio .main {
+  width: 700px;
+  float: left;
+}
+
+#portfolio .sidebar {
+  width: 200px;
+  float: right;
+}
+
+/* maincontent */
+#photograph aside, #video aside {
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+}
+
+#photograph .main, #video .main{
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+}
+
+#photograph {
+  background-image: url(../image/bg-photograph.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+#photograph .photograph-list li {
+  float: left;
+  list-style: none;
+  margin: 0 20px 15px 0;
+}
+
+#photograph .photograph-list li:nth-child(3n) {
+  /* li:nth-child(〇n) 〇の倍数　li:nth-child(〇) 〇番目のエレメント */
+  margin-right: 0;
+}
+
+/*  youtube */
+
+#video  {
+  background-image: url(../image/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
+
+/*  youtube */
+
+/*  photograph */
+#wrap {
+  clear: both;
+  background-color: #fff;
+  margin-top: 220px;
+  padding: 35px 0;
+}
+
+#info #wrap {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+}
+
+.content {
+  width: 960px;
+  height: 0 auto;
+}
+
+/*  about */
+
+h1 {
+  font-size: 36px;
+  font-familiy: 'Bitter', serif;
+  border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+  font-size: 24px;
+  font-familiy: 'Bitter', serif;
+}
+
+.icon:before {
+  /* iconの前にエレメント追加 */
+  content: "";
+  /* contentプロパティは:before,:afterとセットで使う */
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+#about .profile-txt {
+  width: 540px;
+  float: left;
+}
+
+#about .profile-txt span {
+  font-weight: bold;
+}
+
+#about .profile-image {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+#about .carrer th {
+  width: 240px;
+  background-color: #f0f0f0;
+  padding: 12px 0;
+  border: 1px solid #cccccc;
+}
+
+#about .carrer td {
+  width: 660px;
+  padding: 12px 40px;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+ /* index  */
+
+ #info h1 {
+   /*indexの中のh1のみ*/
+   font-size: 100px;
+   line-height: 1;
+   color: #fff;
+   font-familiy: 'Bitter', serif;
+   margin-bottom: 50px;
+   border: none;
+ }
+
+#info .content{
+  /* indexのなかのcontent class*/
+  margin-top: 150px;
+}
+
+#info p {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* 共通 */
+
+.btn a {
+  background-color: #009cd3;
+  font-size: 20px;
+  color: #fff;
+  font-familiy: 'Bitter',serif;
+  width: 185px;
+  display: block;  /* a要素、img、spanはdisplayを指定しないと高さ幅が調整できない*/
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+.btn a:hover{
+  /*ボタンにカーソルを乗せたときのみ*/
+  text-decoration: none;
+  background-color: #fff;
+  color: #009cd3;
+}
+
+.main-center {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* footer  */
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  background-color: #767671;
+}
+
+small {
+  font-size: 12px;
+}
+
+#info footer {
+  width: 960px;
+  margin: 150 auto 0 auto;
+  text-align: left;
+  background-color: transparent;
+}
+
+#portfolio header {
+  margin-top: 20px;
+}
+
+/* 背景設定*/
+
+#info {
+  background-image: url(../image/bg-index.jpg);
+  background-repeat: no-repeat; /* 画像を複数枚表示するのを阻止*/
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about {
+  background-image: url(../image/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center top; /* 画像を上部に表示　*/
+  background-size: 100% auto;
+  background-attachment: fixed;
+}

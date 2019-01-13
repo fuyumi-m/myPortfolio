@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>sample||ChallengePG</title>
+  <link rel="shortcut icon" href="image/myimg/favicon-1.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="style.css/my.css">
+
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+
+</head>
+
+<body id="kihon">
+  <div class="main-body">
+  <header>
+
+       <h1 class="logo">Choco*学習帳</h1>
+      <div id="nav">
+      <ul>
+        <a href="index.html"><li>TOP</li></a>
+        <a href="zikosyoukai.html"><li>info</li></a>
+        <a href="sample.html"><li>Sample</li></a>
+       <a href="my-photo.html"><li>画像集＊</li></a>
+        <a href="form.html"><li>Contact</li></a>
+      </ul>
+    </div>
+    </header>
+    <div class="main">
+     <b>◆こちらのページはJavaScriptの基本操作を載せていきます</b>
+    <section>
+      <p>日付の表示　<button id="date">クリックで表示します。</button>
+      <span id="date_text"></span></p>
+        <script>
+
+
+
+           var datebtn = document.getElementById('date');
+           var date_text = document.getElementById('date_text');
+           datebtn.addEventListener('click', function() {
+              var day = new Date();
+              var y = day.getFullYear();
+              var m = day.getMonth()+1;
+              var d = day.getDate();
+              var today = y + '年' + m + '月' + d + '日';
+              date_text.innerHTML = ':' + today;
+           })
+
+        </script>
+    </section>
+
+    </div>
+    <footer>
+    </footer>
+
+    </body>
+  </html>
